@@ -1,0 +1,21 @@
+.header {
+  &__link {
+    color: $primary-100;
+    position: relative;
+  }
+  &__link:first-child:active {
+    border-color: transparent;
+  }
+  &__link.activePage {
+    color: $white;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background-color: $primary-100;
+    }
+  }
+}

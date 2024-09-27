@@ -390,7 +390,7 @@ $enable-grid-classes: true !default;
 $enable-container-classes: true !default;
 $enable-cssgrid: false !default;
 $enable-button-pointers: true !default;
-$enable-rfs: true !default;
+$enable-rfs: false; //true !default;
 $enable-validation-icons: true !default;
 $enable-negative-margins: false !default;
 $enable-deprecation-messages: true !default;
@@ -427,12 +427,99 @@ $spacer: 1rem !default;
 $spacers: (
   0: 0,
   1: $spacer * 0.25,
+  // 4
   2: $spacer * 0.5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  // 8
+  r1: $spacer * 0.625,
+  // 10
+  3: $spacer * 0.75,
+  // 12
+  4: $spacer,
+  // 16
+  5: $spacer * 1.25,
+  // 20
+  6: $spacer * 1.5,
+  // 24
+  7: $spacer * 1.75,
+  // 28
+  8: $spacer * 2,
+  // 32
+  9: $spacer * 2.25,
+  // 36
+  10: $spacer * 2.5,
+  // 40
+  11: $spacer * 2.75,
+  // 44
+  12: $spacer * 3,
+  // 48
+  13: $spacer * 3.25,
+  // 52
+  14: $spacer * 3.5,
+  // 56
+  15: $spacer * 3.75,
+  // 60
+  16: $spacer * 4,
+  // 64
+  17: $spacer * 4.25,
+  // 68
+  18: $spacer * 4.5,
+  // 72
+  19: $spacer * 4.75,
+  // 76
+  20: $spacer * 5,
+  // 80
+  21: $spacer * 5.25,
+  // 84
+  22: $spacer * 5.5,
+  // 88
+  23: $spacer * 5.75,
+  // 92
+  24: $spacer * 6,
+  // 96
+  25: $spacer * 6.25,
+  // 100
+  26: $spacer * 6.5,
+  // 104
+  27: $spacer * 6.75,
+  // 108
+  28: $spacer * 7,
+  // 112
+  29: $spacer * 7.25,
+  // 116
+  30: $spacer * 7.5,
+  // 120
+  31: $spacer * 7.75,
+  // 124
+  32: $spacer * 8,
+  // 128
+  33: $spacer * 8.25,
+  // 132
+  34: $spacer * 8.5,
+  // 136
+  35: $spacer * 8.75,
+  // 140
+  36: $spacer * 9,
+  // 144
+  37: $spacer * 9.25,
+  // 148
+  38: $spacer * 9.5,
+  // 152
+  39: $spacer * 9.75,
+  // 156
+  40: $spacer * 10,
+  // 160
+  50: $spacer * 12.5 // 200,,,,,,,,,,,,,,,,,,,
 ) !default;
 // scss-docs-end spacer-variables-maps
+
+$custom-spacers: (
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+  auto: auto,
+  32px: 32px,
+);
 
 // Position
 //
@@ -488,7 +575,7 @@ $icon-link-icon-transform: translate3d(0.25em, 0, 0) !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom: 1rem !default;
+$paragraph-margin-bottom: 0; //1rem !default;
 
 // Grid breakpoints
 //
@@ -661,7 +748,7 @@ $font-sizes: (
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-$headings-margin-bottom: $spacer * 0.5 !default;
+$headings-margin-bottom: 0; //$spacer * 0.5 !default;
 $headings-font-family: null !default;
 $headings-font-style: null !default;
 $headings-font-weight: 500 !default;

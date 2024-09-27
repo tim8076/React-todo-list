@@ -216,13 +216,7 @@ $utilities: map-merge(
       (
         property: width,
         class: w,
-        values: (
-          25: 25%,
-          50: 50%,
-          75: 75%,
-          100: 100%,
-          auto: auto,
-        ),
+        values: $custom-spacers,
       ),
     "max-width": (
       property: max-width,
@@ -248,13 +242,7 @@ $utilities: map-merge(
     "height": (
       property: height,
       class: h,
-      values: (
-        25: 25%,
-        50: 50%,
-        75: 75%,
-        100: 100%,
-        auto: auto,
-      ),
+      values: $custom-spacers,
     ),
     "max-height": (
       property: max-height,
@@ -275,6 +263,7 @@ $utilities: map-merge(
       class: min-vh,
       values: (
         100: 100vh,
+        body: calc(100vh - 76px),
       ),
     ),
     // scss-docs-end utils-sizing
@@ -587,7 +576,7 @@ $utilities: map-merge(
         ),
       ),
     "font-size": (
-      rfs: true,
+      responsive: true,
       property: font-size,
       class: fs,
       values: $font-sizes,
@@ -911,7 +900,13 @@ $utilities: map-merge(
         property: z-index,
         class: z,
         values: $zindex-levels,
-      )
-      // scss-docs-end utils-zindex
+      ),
+    "cursor": (
+      property: cursor,
+      class: cursor,
+      responsive: true,
+      values: auto pointer grab,
+    )
+    // scss-docs-end utils-zindex
   )
 );
