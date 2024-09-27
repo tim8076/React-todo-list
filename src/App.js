@@ -117,7 +117,7 @@ function App() {
             isAdding={isAdding}
             addTodoItem={addTodoItem}
             setTodo={setTodo}
-            closeAddTod={closeAddTodo}
+            closeAddTodo={closeAddTodo}
             saveTodoList={saveTodoList}
           />
           <ul className="list-unstyled m-0">

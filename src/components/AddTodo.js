@@ -145,7 +145,7 @@ export default function AddTodo({
               <button
                 type="button"
                 className="btn btn-light text-danger py-4 w-100 fs-md-1 rounded-0"
-                onClick={() => closeAddTodo()}
+                onClick={closeAddTodo}
               >
                 Cancel
               </button>
